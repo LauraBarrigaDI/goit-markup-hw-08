@@ -1,0 +1,124 @@
+.form{
+    &__pos-relative{
+        position: relative;
+        padding: 5px;
+    }
+
+    &__label{
+        font-family: $font-family-primary;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        color: $color-text-secondary;
+        line-height: 1.16;
+    }
+
+    &__submit-button{
+        color: $secondary-color;
+        font-family: $font-family-primary;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.06em;
+    
+        width: 200px;
+        height: 50px;
+        margin-left: 135px;
+        margin-top: 30px;
+        border: none;
+        background: #188CE8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        cursor: pointer;
+    }
+}
+
+.form__input{
+    display: block;
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 40px;
+    width: 100%;
+    padding-left: 42px;
+
+    &:hover, .form__input:focus{
+        border: 1px solid $primary-color;
+    }
+
+    &-icon{
+        position: absolute;
+        top: 38px;
+        left: 20px;
+        fill: $color-text-primary;
+        pointer-events: none;
+    }
+    &:hover + .form__input-icon, 
+    .form__input:focus + .from__input-icon{
+        @include hovercolor;
+    }
+}
+
+.form__textarea{
+    display: block;
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 120px;
+    width: 100%;
+    padding: 12px;
+    font-family: $font-family-primary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    color: rgba(117, 117, 117, 0.5);
+
+    &:hover, .form__textarea:focus{
+        @include hovercolor;
+        border: 1px solid;
+    }
+}
+
+.form__checkbox{
+    display: block;
+    font-family: $font-family-primary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: $color-text-secondary;
+    width: 400px;
+    height: 24px;
+    margin-top: 20px;
+    padding-left: 50px;
+}
+
+.form__checkmark{
+    position: absolute;
+    left: 30px;
+    top: 28px;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $color-text-primary;
+
+    
+    
+}
+
+.form__checkmark-icon{
+    display: none;
+    align-self: center;
+    margin-left: 2px;
+    margin-bottom: 2px;
+}
+
+.form__checkbox input[type="checkbox"]:checked + .form__checkmark{
+    background: $primary-color;
+    border: none;
+}
+
+.form__checkbox input[type="checkbox"]:checked + .form__checkmark .form__checkmark-icon{
+    display: inline;
+}
+

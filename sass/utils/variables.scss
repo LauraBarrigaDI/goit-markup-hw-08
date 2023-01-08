@@ -1,0 +1,42 @@
+$primary-color: #2196F3;
+$secondary-color: #ffffff;
+$color-text-primary: #212121;
+$color-text-secondary: #757575;
+$color-icon-primary:#AFB1B8;
+$font-family-primary:'Roboto', sans-serif;
+$font-family-secondary:'Raleway', sans-serif;
+
+@mixin logo{
+    color: $primary-color;
+    font-family: $font-family-secondary;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+    margin-right: 93px;
+}
+
+@mixin title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2px;
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+@mixin socialicon-color{
+    background:$secondary-color;
+    fill:$color-icon-primary;
+}
+
+@mixin hovercolor{
+    color: $primary-color;
+    fill: $primary-color;
+}
+
+@mixin hovercolor-reverse{
+    background: $primary-color;
+    fill: $secondary-color;
+    color: $secondary-color;
+}

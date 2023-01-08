@@ -1,0 +1,72 @@
+.form{
+   
+    &__subscript{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        flex-grow: 1;
+    } 
+
+    &__title-subscript{
+        align-self: flex-start;
+        padding-bottom: 20px;
+        font-family: $font-family-primary;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        color: $secondary-color;
+      }
+
+    &__email-subscript{
+        width: 358px;
+        height: 50px;
+        top: 108px;
+        margin-right: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        background-color: #2F303A;
+        font-family: $font-family-primary;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.3;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+      }
+}
+
+
+.form__button-subscript{
+    width: 200px;
+    height: 50px;
+    padding-top: 10px;
+    background: $primary-color;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+
+    &-title{
+        position: relative;
+        font-family: $font-family-primary;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.9;
+        letter-spacing: 0.06em;
+        color: $secondary-color;
+        display: flex;
+        left: 39px;
+    }
+      
+    &-icon{
+        display: flex;
+        position: relative;
+        left: 150px;
+        bottom: 25px;
+    }
+  }
