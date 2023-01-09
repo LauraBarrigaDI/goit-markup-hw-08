@@ -1,0 +1,231 @@
+@media screen and (min-width:768px) and (max-width:1199px){
+    .container{
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*_header*/
+    .nav{
+        display: block;
+        width: 768px;
+        height: 80px;
+        
+        justify-content: flex-start; 
+        align-items: center;
+    
+        &__logo{
+            color: $primary-color;
+            font-family: $font-family-secondary;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2;
+            text-decoration: none;
+        }
+    
+        &__logo2{
+            color: $color-text-primary;
+            font-family: $font-family-secondary;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2;
+            text-decoration: none;
+        }
+    
+        &__link{
+            color: $color-text-primary;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.2;
+            text-decoration: none;
+            
+            position: relative;
+    
+            &::after{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: calc(100% + 35px);
+                width: 100%;
+                height: 4px;
+                background-color:$primary-color;
+                border-radius: 2px;
+                opacity: 0;
+                transition: opacity 250ms;
+            }
+            
+        } 
+    }
+    
+    .nav__link:hover,
+    .nav__link.nav__link--selected{
+        @include hovercolor;
+    } 
+    
+    .nav__link.nav__link--selected::after{
+        @include hovercolor;
+        opacity: 1;
+    }
+    
+    .header__contact{
+        display: inline-flex;
+        
+        justify-content: flex-end; 
+        align-items: flex-start;
+    
+        &-icon{
+            display: inline-flex;
+            margin-right: 10px;
+            fill: $color-text-secondary;
+        }
+    
+        &-link{
+            color: $color-text-primary;
+            margin-right: 30px;
+            font-size: 14px;
+            line-height: 1.2;
+            font-weight: 500;
+            text-decoration: none;
+            
+            &:hover{
+                @include hovercolor;
+            }
+    
+            &:hover .header__contact-icon{
+                @include hovercolor;
+            }
+        }
+    }
+    
+
+    /*_studio-application*/
+    .container{
+    
+        &__title{
+            display: flex; 
+            height: 400px;
+            margin-bottom: 60px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+                &::before{
+                    content: "";
+                    width: 760px;
+                    height: 400px;
+                    position: absolute;
+                    background-image: url(fondo1.jpg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    z-index: -1;
+                }
+    
+                &::after{
+                    content: "";
+                    width: 768px;
+                    height: 400px;
+                    position: absolute;
+                    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+                    z-index: -1;
+                }
+        }
+    
+        &__h1{
+            color: $secondary-color;
+            font-size: 26px;
+            font-weight: 900;
+            line-height: 1.6;
+            text-transform: uppercase;
+            
+        }
+    
+        &__button{
+            color: $secondary-color;
+            background-color: $primary-color;
+            border: 5px solid $primary-color;
+            border-radius: 5px;
+            font-size: 16px;
+            line-height: 1.9;
+            font-weight: 700;
+            cursor: pointer;
+        }
+    }
+
+
+    /*_studio-values*/
+    .values{
+        
+        &__icon {
+            display: block;
+            width: 420px;
+            height: 120px;
+            margin-right: 15px;
+            margin-top: 30px;
+            padding-left: 80px;
+            background: #F5F4FA;
+            border-radius: 4px;
+            fill: $color-text-primary;
+        }
+
+        &__title{
+            display: block;
+            margin-bottom: 10px;
+            align-items: center;
+            width: 270px;
+            height: 16px;
+            font-family: $font-family-primary;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 1.1;
+            text-transform: uppercase;  
+        }
+
+        &__description{
+            display: block;
+            width: 450px;
+            height: 50px;
+            color: $color-text-secondary;
+            font-family: $font-family-primary;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+    }
+
+    /*_studio-services*/
+
+    .services__devices{
+        display: flex;
+        padding-bottom: 94px;
+        justify-content: space-between;
+        flex-direction: row;
+        position: relative; 
+
+        &-card{
+            position: relative;
+            
+            &::before{
+                content: "";
+                width: 370px;
+                height: 100%;
+                position: absolute;
+                background:linear-gradient(transparent 75%,rgba(47, 48, 58, 0.8)75%,rgba(47, 48, 58, 0.8)99%, transparent 99%);
+            }
+        }
+
+        &-images{
+            width: 370px;
+            height: 294px;
+        }
+
+        &-text{
+            position: absolute;
+            bottom: 15px;
+            color: $secondary-color;
+            font-weight: 700;
+            font-size: 14px;
+            margin-left: 90px;
+        }
+    }
+}

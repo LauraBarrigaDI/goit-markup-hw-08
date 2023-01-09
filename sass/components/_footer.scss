@@ -33,6 +33,10 @@
         @include logo;
     }
 
+    &__logo2{
+        @include logo3;
+    }
+
     &__address{
         display: block;
         width: 231px;

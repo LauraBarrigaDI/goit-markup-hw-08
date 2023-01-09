@@ -16,6 +16,51 @@ $font-family-secondary:'Raleway', sans-serif;
     margin-right: 93px;
 }
 
+@mixin logo-480px{
+    color: $primary-color;
+    font-family: $font-family-secondary;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+    margin-right: 93px;
+}
+@mixin logo2{
+    color: $color-text-primary;
+    font-family: $font-family-secondary;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+@mixin logo2-480px{
+    color: $color-text-primary;
+    font-family: $font-family-secondary;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+@mixin logo3{
+    color: $secondary-color;
+    font-family: $font-family-secondary;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+@mixin logo3-480px{
+    color: $secondary-color;
+    font-family: $font-family-secondary;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
 @mixin title{
     font-weight: 700;
     font-size: 36px;
@@ -23,6 +68,15 @@ $font-family-secondary:'Raleway', sans-serif;
     text-align: center;
     padding-top: 94px;
     padding-bottom: 50px;
+}
+
+@mixin title-480px{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
 }
 
 @mixin socialicon-color{

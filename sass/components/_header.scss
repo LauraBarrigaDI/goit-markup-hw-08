@@ -8,6 +8,10 @@
         @include logo;
     }
 
+    &__logo2{
+        @include logo2;
+    }
+
     &__link{
         color: $color-text-primary;
         font-size: 14px;
