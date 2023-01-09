@@ -796,13 +796,15 @@ body {
     z-index: -1;
   }
   .container__h1 {
+    display: inline-block;
+    width: 360px;
+    height: 84px;
+    padding: 0%;
     color: #ffffff;
     font-size: 26px;
     font-weight: 900;
     line-height: 1.6;
     text-transform: uppercase;
-    text-align: center;
-    padding: 0%;
   }
   .container__button {
     color: #ffffff;
@@ -819,7 +821,7 @@ body {
     /*_studio-services*/
   }
   .values__icon {
-    display: block;
+    display: inline-block;
     width: 420px;
     height: 120px;
     margin-right: 15px;
@@ -830,19 +832,20 @@ body {
     fill: #212121;
   }
   .values__title {
-    display: block;
+    display: inline-block;
+    padding-left: 120px;
     margin-bottom: 10px;
-    align-items: center;
-    width: 270px;
+    width: 300px;
     height: 16px;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.1;
     text-transform: uppercase;
+    text-align: center;
   }
   .values__description {
-    display: block;
+    display: inline-block;
     width: 450px;
     height: 50px;
     color: #757575;

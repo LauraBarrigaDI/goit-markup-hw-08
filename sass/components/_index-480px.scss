@@ -54,14 +54,15 @@
         }
     
         &__h1{
+            display: inline-block;
+            width: 360px;
+            height: 84px;
+            padding: 0%;
             color: $secondary-color;
             font-size: 26px;
             font-weight: 900;
             line-height: 1.6;
-            text-transform: uppercase;
-            text-align: center;
-            padding: 0%;
-
+            text-transform: uppercase; 
         }
     
         &__button{
@@ -79,7 +80,7 @@
     .values{
         
         &__icon {
-            display: block;
+            display: inline-block;
             width: 420px;
             height: 120px;
             margin-right: 15px;
@@ -91,20 +92,21 @@
         }
 
         &__title{
-            display: block;
+            display: inline-block;
+            padding-left: 120px;
             margin-bottom: 10px;
-            align-items: center;
-            width: 270px;
+            width: 300px;
             height: 16px;
             font-family: $font-family-primary;
             font-size: 14px;
             font-weight: 700;
             line-height: 1.1;
-            text-transform: uppercase;  
+            text-transform: uppercase;
+            text-align: center;  
         }
 
         &__description{
-            display: block;
+            display: inline-block;
             width: 450px;
             height: 50px;
             color: $color-text-secondary;
@@ -114,7 +116,7 @@
             line-height: 1.7;
         }
 
-        /*_studio-services*/
+    /*_studio-services*/
         .services{
             @include title-480px;
         }
