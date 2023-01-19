@@ -1,14 +1,18 @@
+.container__values{
+     
+}
+
 .values{
     display: flex;
-    padding-left: 30px;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    padding: 10px;
 
     &__icon {
         display: inline-flex;
+        width: 270px;
+        height: 120px;
         margin-top: 94px;
         margin-bottom: 30px;
+        margin-right: 30px;
         justify-content: center;
         background: #F5F4FA;
         border-radius: 4px;
