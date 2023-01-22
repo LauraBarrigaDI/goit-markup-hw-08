@@ -19,7 +19,7 @@
 
   <body>
     <!-- Encabezado de la página -->
-    <header>
+    <header class="page-header">
       <div class="container">
         <!-- _header -->
         <div class="container__header">
@@ -50,6 +50,23 @@
             >
           </div>
         </div>
+      </div>
+
+      <div class="container__menu">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="header__menu-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 20 20"
+          >
+            <use href="./images/symbol-defs2.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -150,6 +167,8 @@
               class="services__devices-images"
               src="images/imagen.jpg"
               alt="Sobre el escritorio, una tablet, teclado y manos digitando"
+              srcset="images/imagen.jpg 373w, images/imagen@2x.jpg 746w"
+              sizes="100vw"
               width="373"
               height="324"
             />
@@ -160,6 +179,8 @@
               class="services__devices-images"
               src="images/imagen1.jpg"
               alt="Un par de manos, una digitando en un portátil y la otra sosteniendo un celular"
+              srcset="images/imagen1.jpg 373w, images/imagen1@2x.jpg 746w"
+              sizes="100vw"
               width="373"
               height="324"
             />
@@ -170,6 +191,8 @@
               class="services__devices-images"
               src="images/imagen2.jpg"
               alt="Una tablet con fondo de colores"
+              srcset="images/imagen2.jpg 373w, images/imagen2@2x.jpg 746w"
+              sizes="100vw"
               width="373"
               height="324"
             />
@@ -187,6 +210,8 @@
               <img
                 class="members__card-image"
                 src="images/imagen3.jpg"
+                srcset="images/imagen3.jpg 270w, images/imagen3@2x.jpg 540w"
+                sizes="100vw"
                 alt="Foto de Andrés Cubo"
                 width="270"
                 height="260"
@@ -237,6 +262,8 @@
                 class="members__card-image"
                 src="images/imagen4.jpg"
                 alt="Foto de Carla Palacios"
+                srcset="images/imagen4.jpg 270w, images/imagen4@2x.jpg 540w"
+                sizes="100vw"
                 width="270"
                 height="260"
               />
@@ -286,6 +313,8 @@
                 class="members__card-image"
                 src="images/imagen5.jpg"
                 alt="Foto de Mario Dorado"
+                srcset="images/imagen5.jpg 270w, images/imagen5@2x.jpg 540w"
+                sizes="100vw"
                 width="270"
                 height="260"
               />
@@ -335,6 +364,8 @@
                 class="members__card-image"
                 src="images/imagen6.jpg"
                 alt="Foto de Pablo Mijangos"
+                srcset="images/imagen6.jpg 270w, images/imagen6@2x.jpg 540w"
+                sizes="100vw"
                 width="270"
                 height="260"
               />
@@ -446,13 +477,13 @@
         </div>
       </section>
     </main>
-
+    <!-- _studio-application-form -->
     <div class="backdrop backdrop--is-hidden" data-modal>
       <div class="modal">
         <div class="modal__close">
           <button class="modal__close-button" data-modal-close>
             <svg class="modal__close-icon" width="11" height="11">
-              <use href="./images/symbol-defs2.svg#icon-X"></use>
+              <use href="./images/symbol-defs2.svg#icon-x"></use>
             </svg>
           </button>
         </div>
@@ -530,6 +561,54 @@
           <button class="form__submit-button" type="submit">Enviar</button>
         </form>
       </div>
+    </div>
+    <!-- _header-menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          class="header__menu-icon"
+          width="24"
+          height="24"
+          viewBox="0 0 20 20"
+        >
+          <use href="./images/symbol-defs2.svg#icon-x"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a class="menu__link" href="index.html">Estudio</a></li>
+        <li><a class="menu__link" href="portfolio.html">Portafolio</a></li>
+        <li><a class="menu__link" href="">Contactos</a></li>
+      </ul>
+
+      <ul class="mobile-menu">
+        <li>
+          <a class="menu__contact-link1" href="tel:+525555296000"
+            >+52 55 5529 6000</a
+          >
+        </li>
+        <li>
+          <a class="menu__contact-link2" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-menu2">
+        <li>
+          <a class="menu__social-link" href="/">Instagram</a>
+          <svg width="0" height="18" style="outline: 1px solid #757575"></svg>
+        </li>
+        <li>
+          <a class="menu__social-link" href="/">Twiter</a>
+          <svg width="0" height="18" style="outline: 1px solid #757575"></svg>
+        </li>
+        <li>
+          <a class="menu__social-link" href="/">Facebook</a>
+          <svg width="0" height="18" style="outline: 1px solid #757575"></svg>
+        </li>
+        <li><a class="menu__social-link" href="/">LinkedIn</a></li>
+      </ul>
     </div>
 
     <!-- Pie de página -->
@@ -625,5 +704,6 @@
       </div>
     </footer>
     <script src="./JS/modal.js"></script>
+    <script src="./JS/mobile-menu.js"></script>
   </body>
 </html>

@@ -52,7 +52,13 @@
                     z-index: -1;
                 }
         }
-    
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution:192dpi),
+    screen and (min-resolution: 2dppx){
+        .container__title::before{
+            background-image: url(fondo1@2x.jpg);
+        }
+    }
         &__h1{
             display: inline-block;
             width: 360px;
